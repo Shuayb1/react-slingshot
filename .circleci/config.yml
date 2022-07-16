@@ -25,9 +25,9 @@ jobs:
 workflow:
   new_workflow:
     - build
-    - test
+    - test:
         requires:
           - build
-    - analyze
+    - analyze:
         requires:
           - test
